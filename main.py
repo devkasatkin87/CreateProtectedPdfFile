@@ -9,7 +9,7 @@ pdf = PdfReader('sample.pdf')
 for page in range(len(pdf.pages)):
     pdf_writer.add_page(pdf.pages[page])
  
-# ввод пароля 
+# ввод пароля (скрытого при вводе)
 password = getpass(prompt='Enter password: ')
 
 # шифруем файл с помощью пароля
